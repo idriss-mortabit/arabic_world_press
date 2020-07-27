@@ -1,5 +1,5 @@
 ## React-News-Aggregator
-### [Click here to view the live application](https://nervous-mcnulty-ee2412.netlify.com)
+### [Click here to view the live application](https://awpress.herokuapp.com/)
 A news web application built using React.js that pulls the top news stories from newspapers.
 
 ## Project Status

@@ -5,6 +5,14 @@ import React from "react";
 class Footer extends React.Component {
   
   render() {
+    const style ={
+      float: "left",
+      fontSize : "1400px",
+      fontWeight: "500",
+      lineHeight: "1",
+      position: "relative",
+      textTransform: "uppercase"
+	};
     return (
       <footer  id="mvp-foot-wrap" className="left relative">
       <div id="mvp-foot-top" className="left relative">
@@ -29,11 +37,11 @@ class Footer extends React.Component {
             <div id="mvp-foot-menu" className="left relative">
             <ul className="mvp-foot-menu-list">
              
-             <li><a href="#" target="_blank" >BUY THEME</a></li>
+             <li><a syle={style} href="#" target="_blank" >BUY THeME</a></li>
          
              <li><a href="#" target="_blank">ENTERTAINMENT</a></li>
            
-             <li><a href="#" target="_blank" >FASHION</a></li>
+             <li><a href="#" target="_blank" >Fashion</a></li>
           
              <li><a href="#" target="_blank" >SPORTS</a></li>
          

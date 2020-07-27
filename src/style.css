@@ -446,7 +446,9 @@ h2.mvp-logo-title {
 	left: 100px;
 	}
 
-.mvp-nav-logo-small,
+.mvp-nav-logo-small {
+	display: inline;
+	}
 .mvp-nav-small .mvp-nav-logo-reg {
 	display: none;
 	}
@@ -904,7 +906,7 @@ span.mvp-woo-cart-num {
 .mvp-nav-menu ul li a {
 	float: left;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1;
 	padding: 18px 12px;
 	position: relative;
@@ -1163,20 +1165,11 @@ ul.mvp-mega-list li:hover .mvp-mega-img img {
 	6. Fly-Out Navigation
 ************************************************/
 
-#mvp-fly-wrap {
-	overflow: hidden;
-	position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-	-webkit-transform: translate3d(-370px,0,0);
-	   -moz-transform: translate3d(-370px,0,0);
-	    -ms-transform: translate3d(-370px,0,0);
-	     -o-transform: translate3d(-370px,0,0);
-		transform: translate3d(-370px,0,0);
-	width: 370px;
+#mvp-fly-wrap { 
+	position: absolute;
+	top: 0px;
+	width: 300px;
 	height: 100%;
-	z-index: 999999;
 	}
 
 .mvp-fly-but-wrap,
