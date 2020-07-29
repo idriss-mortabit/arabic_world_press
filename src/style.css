@@ -1098,6 +1098,19 @@ span.mvp-woo-cart-num {
 	display: block;
 	}
 
+ul.mvp-mega-list li a p {
+	background: none !important;
+	border-bottom: none;
+	color: #222 !important;
+	float: left;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif; ;
+	line-height: 1.2;
+	padding: 0 !important;
+	text-align: left;
+	text-transform: none;
+	}
 .mvp-nav-menu ul li ul.mvp-mega-list li a,
 .mvp-nav-menu ul li ul.mvp-mega-list li a p {
 	background: none !important;
@@ -1142,14 +1155,14 @@ ul.mvp-mega-list li:first-child {
 	float: left;
 	line-height: 0;
 	margin-bottom: 10px;
-	overflow: hidden;
+
 	position: relative;
 	width: 100%;
 	max-height: 130px;
 	}
 
 .mvp-mega-img img {
-	display: none;
+	display: block;
 	width: 100%;
 	}
 
