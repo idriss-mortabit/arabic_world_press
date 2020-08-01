@@ -1,5 +1,10 @@
 import React from "react";
 import HomeGeneral from "./components/HomeGeneral";
+import HomeFeat2 from "./components/HomeFeat2";
+import HomeFeat3 from "./components/HomeFeat3";
+import HomeFeat4 from "./components/HomeFeat4";
+import HomeFeat5 from "./components/HomeFeat5";
+import HomeFeat6 from "./components/HomeFeat6";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import DownMenu from "./components/DownMenu";
@@ -19,6 +24,11 @@ function App() {
     <div className="App">
       <Header />
       <HomeGeneral />
+      <HomeFeat2 />
+      <HomeFeat3 />
+      <HomeFeat4 />
+      <HomeFeat5 />
+      <HomeFeat6 />
       <Footer />
     </div>
   );
