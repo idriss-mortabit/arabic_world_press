@@ -4904,7 +4904,11 @@ span.mvp-post-add-link-but:hover {
 	background: #000;
 	color: #fff;
 	}
-
+div.paddings {
+	padding: 17%;
+	padding-top: 15px;
+	
+}
 #mvp-post-more-wrap,
 ul.mvp-post-more-list {
 	width: 100%;

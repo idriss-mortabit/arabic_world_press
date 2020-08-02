@@ -1,22 +1,14 @@
 import React from "react";
-import BurgerMenu from "./BurgerMenu";
-
+import BMenu from "./DownMenu";
 
 class Header extends React.Component {
     constructor(){
         super();
         this.state = {render:false}
         this.handleClick = this.handleClick.bind(this);
-        this._renderSubComp = this._renderSubComp.bind(this);
     }
     handleClick(e){
-        console.log("radiii")
-        this.setState({render: !this.state.render}, () => this._renderSubComp());        
-    }
-    _renderSubComp(){
-        if(this.state.render==true){
-            return <BurgerMenu />    
-        }
+        this.setState({render: !this.state.render});        
     }
   render() {
     return (
@@ -126,7 +118,7 @@ class Header extends React.Component {
                 </div>
             </nav>  
     </header>
-        {this._renderSubComp()}
+        <BMenu state={this.state.render}/>
     </div>
         );
     }

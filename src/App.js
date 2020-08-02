@@ -5,9 +5,9 @@ import HomeFeat3 from "./components/HomeFeat3";
 import HomeFeat4 from "./components/HomeFeat4";
 import HomeFeat5 from "./components/HomeFeat5";
 import HomeFeat6 from "./components/HomeFeat6";
+import Cat from "./components/Cat";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import DownMenu from "./components/DownMenu";
 import "./style.css";
 //import "./css/amp-style.css";
 //import "./css/editor-style.css";
@@ -29,6 +29,7 @@ function App() {
       <HomeFeat4 />
       <HomeFeat5 />
       <HomeFeat6 />
+      <Cat />
       <Footer />
     </div>
   );

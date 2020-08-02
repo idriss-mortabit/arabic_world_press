@@ -2280,7 +2280,9 @@
 		height: 30px !important;
 		z-index: 9999;
 		}
-		
+	div.paddings {
+		padding: 15px;	
+	}
 	.mvp-nav-small {
 		-webkit-box-shadow: 0 1px 16px 0 rgba(0,0,0,0.3);
 		   -moz-box-shadow: 0 1px 16px 0 rgba(0,0,0,0.3);
@@ -3236,7 +3238,9 @@
 	#mvp-feat1-wrap {
 		margin-bottom: 40px;
 		}
-		
+	div.paddings {
+		padding: 15px;	
+	}	
 	#mvp-main-nav-top {
 		padding: 10px 0 !important;
 		height: 30px !important;
@@ -4275,7 +4279,9 @@
 		height: 30px !important;
 		z-index: 9999;
 		}
-		
+	div.paddings {
+		padding: 15px;	
+	}	
 	.mvp-nav-small {
 		-webkit-box-shadow: 0 1px 16px 0 rgba(0,0,0,0.3);
 		   -moz-box-shadow: 0 1px 16px 0 rgba(0,0,0,0.3);
@@ -5436,7 +5442,9 @@
 		margin: 0 4.1666666666%; /* 15 / 360 */
 		width: 91.6666666666%; /* 330 / 360 */
 		}
-		
+	div.paddings {
+		padding: 15px;	
+	}	
 	.mvp-widget-home {
 		margin-top: 30px;
 		}
