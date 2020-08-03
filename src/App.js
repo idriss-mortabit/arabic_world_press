@@ -8,6 +8,7 @@ import HomeFeat6 from "./components/HomeFeat6";
 import Cat from "./components/Cat";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./style.css";
 //import "./css/amp-style.css";
 //import "./css/editor-style.css";
@@ -18,20 +19,31 @@ import "./css/media-queries.css";
 //import "./css/amp-media-queries.css";
 //import "./css/media-queries-rtl.css";
 
-
-function App() {
+function Home() {
   return (
     <div className="App">
-      <Header />
       <HomeGeneral />
       <HomeFeat2 />
       <HomeFeat3 />
       <HomeFeat4 />
       <HomeFeat5 />
       <HomeFeat6 />
-      <Cat />
-      <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+  <Router>
+    <React.Fragment>
+    <Header/>
+      <Switch>
+        <Route exact path={"/"} component = {Home} />
+        <Route path = {"/news/:category"} component = {Cat} />
+      </Switch>
+    <Footer/>
+    </React.Fragment>
+  </Router>
   );
 }
 

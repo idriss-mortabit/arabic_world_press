@@ -21,7 +21,7 @@ class Cat extends React.Component {
 					<div class="mvp-post-feat-text left relative">
 						<h3 class="mvp-post-cat left relative">
 							<a class="mvp-post-cat-link" href="http://mvpthemes.com/zoxnews/category/fashion/">
-								<span class="mvp-post-cat left">Fashion</span>
+								<span class="mvp-post-cat left">{this.props.match.params.category}</span>
 							</a>
 						</h3>
 						<h1 class="mvp-post-title mvp-post-title-wide left entry-title" itemprop="headline">Your comprehensive guide to this fall’s biggest trends</h1>

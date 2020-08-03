@@ -1,15 +1,16 @@
 import React from "react";
-import BMenu from "./DownMenu";
-
+import BMenu from "./BMenu";
+import {Link} from 'react-router-dom';
 class Header extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {render:false}
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick(e){
         this.setState({render: !this.state.render});        
     }
+
   render() {
     return (
         <div>
@@ -26,13 +27,13 @@ class Header extends React.Component {
                                             <div className="mvp-nav-top-left">
                                                 <div className="mvp-nav-soc-wrap">
                                                     
-                                                        <a href="#" target="_blank"><span className="mvp-nav-soc-but fa fa-facebook fa-2"></span></a>
+                                                        <a href={"https://www.facebook.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-facebook fa-2"></span></a>
                                                     
-                                                        <a href="#" target="_blank"><span className="mvp-nav-soc-but fa fa-twitter fa-2"></span></a>
+                                                        <a href={"https://twitter.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-twitter fa-2"></span></a>
                                                     
-                                                        <a href="#" target="_blank"><span className="mvp-nav-soc-but fa fa-instagram fa-2"></span></a>
+                                                        <a href={"https://www.instagram.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-instagram fa-2"></span></a>
                                                    
-                                                        <a href="#" target="_blank"><span className="mvp-nav-soc-but fa fa-youtube-play fa-2"></span></a>
+                                                        <a href={"https://www.youtube.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-youtube-play fa-2"></span></a>
                                                     
                                                 </div>
                                                <div className="mvp-fly-but-wrap mvp-fly-but-click left relative"  onClick={this.handleClick}>
@@ -44,14 +45,10 @@ class Header extends React.Component {
                                             </div>
                                             <div className="mvp-nav-top-left-in">
                                                 <div className="mvp-nav-top-mid left relative" itemscope itemtype="http://schema.org/Organization">
+                                                
+                                                        <Link className="mvp-nav-logo-reg" itemprop="url" to={"/"}><img itemprop="logo" src={require("../images/logo-large.png")} alt="" data-rjs="2" /></Link>
                                                     
-                                                        <a className="mvp-nav-logo-reg" itemprop="url" href="#"><img itemprop="logo" src="#" alt="" data-rjs="2" /></a>
-                                                    
-                                                        <a className="mvp-nav-logo-reg" itemprop="url" href="#"><img itemprop="logo" src={require("../images/logo-large.png")} alt="" data-rjs="2" /></a>
-                                                    
-                                                        <a className="mvp-nav-logo-small" href="#"><img src="#" alt="" data-rjs="2" /></a>
-                                                    
-                                                        <a className="mvp-nav-logo-small" href="#"><img src={require("../images/logo-nav.png")} alt="" data-rjs="2" /></a>
+                                                        <Link className="mvp-nav-logo-small" to={"/"}><img src={require("../images/logo-nav.png")} alt="" data-rjs="2" /></Link>
                                                    
                                                         <h1 className="mvp-logo-title">Arabic World Press</h1>
                                                    
@@ -85,21 +82,21 @@ class Header extends React.Component {
                                                     <div className="mvp-nav-menu left">
                                                         <ul classNameName="mvp-foot-menu-list">
                 
-                                                            <li><a href="#" target="_blank" >FEATURES</a></li>
+                                                            <li><Link to={"/news/features"}  >FEATURES</Link></li>
 
-                                                            <li><a href="#" target="_blank" >BUY THEME</a></li>
+                                                            <li><Link to={"/news/buy theme"}  >BUY THEME</Link></li>
 
-                                                            <li><a href="#" target="_blank">ENTERTAINMENT</a></li>
+                                                            <li><Link to={"/news/entertainment"} >ENTERTAINMENT</Link></li>
 
-                                                            <li><a href="#" target="_blank" >POLITICS</a></li>
+                                                            <li><Link to={"/news/politics"}  >POLITICS</Link></li>
 
-                                                            <li><a href="#" target="_blank" >FASHION</a></li>
+                                                            <li><Link to={"/news/fashion"}  >FASHION</Link></li>
                                                         
-                                                            <li><a href="#" target="_blank" >SPORTS</a></li>
+                                                            <li><Link to={"/news/sports"}  >SPORTS</Link></li>
                                                         
-                                                            <li><a href="#" target="_blank" >TECH</a></li>
+                                                            <li><Link to={"/news/tech"}  >TECH</Link></li>
 
-                                                            <li><a href="#" target="_blank" >BUSINESS</a></li>
+                                                            <li><Link to={"/news/business"} >BUSINESS</Link></li>
                                             
                                                         
                                                         </ul>
@@ -118,7 +115,7 @@ class Header extends React.Component {
                 </div>
             </nav>  
     </header>
-        <BMenu state={this.state.render}/>
+        <BMenu state={this.state.render} handler = {this.handleClick}/>
     </div>
         );
     }
