@@ -104,9 +104,6 @@ class Header extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="mvp-nav-bot-right left relative">
-                                        <span className="mvp-nav-search-but fa fa-search fa-2 mvp-search-click"></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
