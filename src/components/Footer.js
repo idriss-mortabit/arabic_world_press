@@ -1,53 +1,49 @@
 import React from "react";
-
+import {Link} from 'react-router-dom';
 
 
 class Footer extends React.Component {
   
   render() {
-    const style ={
-      float: "left",
-      fontSize : "1400px",
-      fontWeight: "500",
-      lineHeight: "1",
-      position: "relative",
-      textTransform: "uppercase"
-	};
     return (
       <footer  id="mvp-foot-wrap" className="left relative">
       <div id="mvp-foot-top" className="left relative">
         <div className="mvp-main-box">
           <div  id="mvp-foot-logo" className="left relative">
-              <a href="/"><img src={require("../images/logo-large.png")} alt="" data-rjs="2" /></a>
+              <Link to={"/"}><img src={require("../images/logo-large.png")} alt="" data-rjs="2" /></Link>
           </div>
           <div  id="mvp-foot-soc" className="left relative">
             <ul className="mvp-foot-soc-list left relative">
              
-                <li><a href="#" target="_blank" className="fa fa-facebook fa-2"></a></li>
+              <li><a href={"https://www.facebook.com/"} rel="noopener noreferrer" target="_blank" className="fa fa-twitter fa-2" ><span></span></a></li>
             
-                <li><a href="#" target="_blank" className="fa fa-twitter fa-2"></a></li>
-             
-                <li><a href="#" target="_blank" className="fa fa-instagram fa-2"></a></li>
+              <li><a href={"https://twitter.com/"}  rel="noopener noreferrer" target="_blank" className="fa fa-twitter fa-2"><span></span></a></li>
+            
+              <li><a href={"https://www.instagram.com/"} rel="noopener noreferrer" target="_blank" className="fa fa-instagram fa-2"><span></span></a></li>
 
-                <li><a href="#" target="_blank" className="fa fa-youtube-play fa-2"></a></li>
-              
+              <li><a href={"https://www.youtube.com/"} rel="noopener noreferrer" target="_blank" className="fa fa-youtube-play fa-2"><span></span></a></li>
+                          
             </ul>
           </div>
           <div id="mvp-foot-menu-wrap" className="left relative">
             <div id="mvp-foot-menu" className="left relative">
             <ul className="mvp-foot-menu-list">
              
-             <li><a syle={style} href="#" target="_blank" >BUY THeME</a></li>
-         
-             <li><a href="#" target="_blank">ENTERTAINMENT</a></li>
-           
-             <li><a href="#" target="_blank" >Fashion</a></li>
-          
-             <li><a href="#" target="_blank" >SPORTS</a></li>
-         
-             <li><a href="#" target="_blank" >BUSINESS</a></li>
-       
-             <li><a href="#" target="_blank" >SHOP</a></li>
+            <li><Link to={"/news/features"}  >FEATURES</Link></li>
+
+            <li><Link to={"/news/buy theme"}  >BUY THEME</Link></li>
+
+            <li><Link to={"/news/entertainment"} >ENTERTAINMENT</Link></li>
+
+            <li><Link to={"/news/politics"}  >POLITICS</Link></li>
+
+            <li><Link to={"/news/fashion"}  >FASHION</Link></li>
+
+            <li><Link to={"/news/sports"}  >SPORTS</Link></li>
+
+            <li><Link to={"/news/tech"}  >TECH</Link></li>
+
+            <li><Link to={"/news/business"} >BUSINESS</Link></li>
            
          </ul>
             </div>

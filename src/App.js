@@ -9,6 +9,7 @@ import Cat from "./components/Cat";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import "./style.css";
 //import "./css/amp-style.css";
 //import "./css/editor-style.css";
@@ -35,6 +36,7 @@ function Home() {
 function App() {
   return (
   <Router>
+    <ScrollToTop />
     <React.Fragment>
     <Header/>
       <Switch>

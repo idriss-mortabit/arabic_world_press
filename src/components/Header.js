@@ -14,8 +14,7 @@ class Header extends React.Component {
   render() {
     return (
         <div>
-        <header id="mvp-main-head-wrap" className="left relative">
-                 
+        <header id="mvp-main-head-wrap" className="left relative">      
             <nav id="mvp-main-nav-wrap" className="left relative">
                 <div id="mvp-main-nav-top" className="left relative">
                     <div className="mvp-main-box">
@@ -27,13 +26,13 @@ class Header extends React.Component {
                                             <div className="mvp-nav-top-left">
                                                 <div className="mvp-nav-soc-wrap">
                                                     
-                                                        <a href={"https://www.facebook.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-facebook fa-2"></span></a>
+                                                        <a href={"https://www.facebook.com/"} rel="noopener noreferrer" target="_blank"><span className="mvp-nav-soc-but fa fa-facebook fa-2"></span></a>
                                                     
-                                                        <a href={"https://twitter.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-twitter fa-2"></span></a>
+                                                        <a href={"https://twitter.com/"} rel="noopener noreferrer" target="_blank"><span className="mvp-nav-soc-but fa fa-twitter fa-2"></span></a>
                                                     
-                                                        <a href={"https://www.instagram.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-instagram fa-2"></span></a>
+                                                        <a href={"https://www.instagram.com/"} rel="noopener noreferrer" target="_blank"><span className="mvp-nav-soc-but fa fa-instagram fa-2"></span></a>
                                                    
-                                                        <a href={"https://www.youtube.com/"} target="_blank"><span className="mvp-nav-soc-but fa fa-youtube-play fa-2"></span></a>
+                                                        <a href={"https://www.youtube.com/"} rel="noopener noreferrer" target="_blank"><span className="mvp-nav-soc-but fa fa-youtube-play fa-2"></span></a>
                                                     
                                                 </div>
                                                <div className="mvp-fly-but-wrap mvp-fly-but-click left relative"  onClick={this.handleClick}>
