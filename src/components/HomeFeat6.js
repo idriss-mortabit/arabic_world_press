@@ -6,7 +6,7 @@ class HomeFeat6 extends React.Component {
 
     render() {
         return (
-<div className="mvp-main-blog-wrap left relative" style={{transform: "none"}}>
+<div className="mvp-main-blog-wrap left relative" style={{transform: "none", paddingTop:"20px", paddingBottom:"20px"}}>
 	<div className="mvp-main-box" style={{transform: "none"}}>
 		<div className="mvp-main-blog-cont left relative" style={{transform: "none"}}>
 			<div className="mvp-widget-home-head">
@@ -249,17 +249,17 @@ class HomeFeat6 extends React.Component {
 										<ul className="mvp-feat1-list-buts left relative">
 											<li className="mvp-feat-col-tab active">
 												<a href="#mvp-tab-col1">
-													<span className="mvp-feat1-list-but">Latest</span>
+													<span className="mvp-feat1-list-but">Videos</span>
 												</a>
 											</li>
 											<li>
 												<a href="#mvp-tab-col2">
-													<span className="mvp-feat1-list-but">Trending</span>
+													<span className="mvp-feat1-list-but">celebs</span>
 												</a>
 											</li>
 											<li>
 												<a href="#mvp-tab-col3">
-													<span className="mvp-feat1-list-but">Videos</span>
+													<span className="mvp-feat1-list-but">world</span>
 												</a>
 											</li>
 										</ul>

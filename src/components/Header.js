@@ -80,24 +80,16 @@ class Header extends React.Component {
                                                 <div className="mvp-nav-bot-left-in">
                                                     <div className="mvp-nav-menu left">
                                                         <ul classNameName="mvp-foot-menu-list">
-                
-                                                            <li><Link to={"/news/features"}  >FEATURES</Link></li>
 
-                                                            <li><Link to={"/news/buy theme"}  >BUY THEME</Link></li>
-
-                                                            <li><Link to={"/news/entertainment"} >ENTERTAINMENT</Link></li>
-
+                                                            <li><Link to={"/"}  >Home</Link></li>
                                                             <li><Link to={"/news/politics"}  >POLITICS</Link></li>
-
-                                                            <li><Link to={"/news/fashion"}  >FASHION</Link></li>
-                                                        
-                                                            <li><Link to={"/news/sports"}  >SPORTS</Link></li>
-                                                        
-                                                            <li><Link to={"/news/tech"}  >TECH</Link></li>
-
                                                             <li><Link to={"/news/business"} >BUSINESS</Link></li>
+                                                            <li><Link to={"/news/sports"}  >SPORTS</Link></li>
+                                                            <li><Link to={"/news/tech"}  >TECH</Link></li>
+                                                            <li><Link to={"/news/entertainment"} >ENTERTAINMENT</Link></li>
+                                                            <li><Link to={"/news/lifestyle"}  >Lifestyle</Link></li>
+                                                            <li><Link to={"/news/world"}  >World</Link></li>
                                             
-                                                        
                                                         </ul>
                                                     </div>
                                                 </div>

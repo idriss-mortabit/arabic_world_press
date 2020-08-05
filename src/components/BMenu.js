@@ -12,23 +12,15 @@ class BMenu extends React.Component {
             <nav className="mvp-fly-nav-menu left relative">
                 <ul >
                     
-                <li><Link to={"/news/features"}  onClick={this.props.handler}>FEATURES</Link></li>
+                  <li><Link to={"/"}  onClick={this.props.handler}>Home</Link></li>
+                  <li><Link to={"/news/politics"}  onClick={this.props.handler}>POLITICS</Link></li>
+                  <li><Link to={"/news/business"} onClick={this.props.handler}>BUSINESS</Link></li>
+                  <li><Link to={"/news/sports"}  onClick={this.props.handler}>SPORTS</Link></li>
+                  <li><Link to={"/news/tech"}  onClick={this.props.handler}>TECH</Link></li>
+                  <li><Link to={"/news/entertainment"}  onClick={this.props.handler}>ENTERTAINMENT</Link></li>
+                  <li><Link to={"/news/lifestyle"}  onClick={this.props.handler}>Lifestyle</Link></li>
+                  <li><Link to={"/news/world"} onClick={this.props.handler}>World</Link></li>
 
-                <li><Link to={"/news/buy theme"}  onClick={this.props.handler}>BUY THEME</Link></li>
-
-                <li><Link to={"/news/entertainment"} onClick={this.props.handler}>ENTERTAINMENT</Link></li>
-
-                <li><Link to={"/news/politics"}  onClick={this.props.handler}>POLITICS</Link></li>
-
-                <li><Link to={"/news/fashion"}  onClick={this.props.handler}>FASHION</Link></li>
-
-                <li><Link to={"/news/sports"}  onClick={this.props.handler}>SPORTS</Link></li>
-
-                <li><Link to={"/news/tech"}  onClick={this.props.handler}>TECH</Link></li>
-
-                <li><Link to={"/news/business"} onClick={this.props.handler}>BUSINESS</Link></li>
-
-                
                 </ul>
             </nav>
         </div>

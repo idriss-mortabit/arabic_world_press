@@ -69,7 +69,7 @@ return (
 							</div>
 						</div>
 						<div className="mvp-feat1-mid-wrap left relative">
-							<h3 className="mvp-feat1-pop-head"><span className="mvp-feat1-pop-head">popup head</span></h3>
+							<h3 className="mvp-feat1-pop-head"><span className="mvp-feat1-pop-head">trending</span></h3>
 							<div className="mvp-feat1-pop-wrap left relative">
 								
                                 <a href="<?php the_permalink(); ?>" rel="bookmark">
@@ -186,11 +186,11 @@ return (
 						<div className="mvp-feat1-list-head-wrap left relative">
 							<ul className="mvp-feat1-list-buts left relative">
 
-								<li className="mvp-feat-col-tab "><a href="#mvp-feat-tab-col1"><span className="mvp-feat1-list-but">Latest</span></a></li>
+								<li className="mvp-feat-col-tab "><a href="#mvp-feat-tab-col1"><span className="mvp-feat1-list-but">Breaking</span></a></li>
                             
-                                <li className="mvp-feat-col-tab active"><a href="#mvp-feat-tab-col2 active"><span className="mvp-feat1-list-but">Videos</span></a></li>
+                                <li className="mvp-feat-col-tab active"><a href="#mvp-feat-tab-col2 active"><span className="mvp-feat1-list-but">Latest</span></a></li>
                             
-                                <li className="mvp-feat-col-tab "><a href="#mvp-feat-tab-col3"><span className="mvp-feat1-list-but">Galleries</span></a></li>
+                                <li className="mvp-feat-col-tab "><a href="#mvp-feat-tab-col3"><span className="mvp-feat1-list-but">stories</span></a></li>
 								
 							</ul>
 						</div>

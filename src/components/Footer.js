@@ -27,25 +27,20 @@ class Footer extends React.Component {
           </div>
           <div id="mvp-foot-menu-wrap" className="left relative">
             <div id="mvp-foot-menu" className="left relative">
-            <ul className="mvp-foot-menu-list">
-             
-            <li><Link to={"/news/features"}  >FEATURES</Link></li>
-
-            <li><Link to={"/news/buy theme"}  >BUY THEME</Link></li>
-
-            <li><Link to={"/news/entertainment"} >ENTERTAINMENT</Link></li>
-
-            <li><Link to={"/news/politics"}  >POLITICS</Link></li>
-
-            <li><Link to={"/news/fashion"}  >FASHION</Link></li>
-
-            <li><Link to={"/news/sports"}  >SPORTS</Link></li>
-
-            <li><Link to={"/news/tech"}  >TECH</Link></li>
-
-            <li><Link to={"/news/business"} >BUSINESS</Link></li>
-           
-         </ul>
+              <ul className="mvp-foot-menu-list">
+              
+                <li><Link to={"/"}  >Home</Link></li>
+                <li><Link to={"/news/politics"}  >POLITICS</Link></li>
+                <li><Link to={"/news/business"} >BUSINESS</Link></li>
+                <li><Link to={"/news/sports"}  >SPORTS</Link></li>
+                <li><Link to={"/news/tech"}  >TECH</Link></li>
+                <li><Link to={"/news/entertainment"} >ENTERTAINMENT</Link></li>
+                <li><Link to={"/news/lifestyle"}  >Lifestyle</Link></li>
+                <li><Link to={"/news/world"}  >World</Link></li>
+                <li><Link to={"/terms"}  >TERMS OF USE</Link></li>
+                <li><Link to={"/privacy"}  >PRIVACY POLICY</Link></li>
+              
+              </ul>
             </div>
           </div>
         </div>
